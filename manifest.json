@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "Hacker News Beautify",
+    "version": "0.0.1",
+    "description": "Make Hacker News more beautiful",
+    "author": "chaojie",
+    "default_locale": "en",
+    "homepage_url": "https://github.com/ischaojie/hacker-news-beautify",
+    "action": { "default_popup": "index.html" },
+    "content_scripts": [
+        {
+            "js": ["src/content.jsx"],
+            "matches": ["https://news.ycombinator.com/*"]
+        }
+    ]
+}
